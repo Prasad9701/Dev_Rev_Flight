@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<style>
+    body {
+        background-color: #1f2833;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #0b0c10;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+        text-align: center;
+        color: #66fcf1;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #c5c6c7;
+        font-size: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .highlight {
+        color: #45a29e;
+        font-weight: bold;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #45a29e;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn:hover {
+        background-color: #1f2833;
+    }
+
+    .btn:active {
+        transform: translateY(2px);
+    }
+</style>
+<div class="container">
+    <h1>Welcome to <span class="highlight">Flight Booking App</span></h1>
+    <p>Discover the world and book your next adventure with us!</p>
+    <a href="#" class="btn">Get Started</a>
+</div>
+{% endblock content %}
